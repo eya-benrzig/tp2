@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <form>
+    <fieldset>
+      <legend>contacter moi</legend>
+      <div>
+        
+        <label for="">civilié:</label>
+        <label for="r1">monsieur</label>
+        <input type="radio" name="f" checked id="r1">
+        <label for="r2">madame</label>
+        <input type="radio" name="f" id="r2">
+        <label for="r3">madamoiselle</label>
+        <input type="radio" name="f" id="r3">
+        </div>
+        <div>
+          <label for="a1">nom:</label><input id="a1" type="text" placeholder="votre nom" required>
+          <label for="a2">prenom:</label><input id="a2" type="text" placeholder="votre prenom" required></div>
+          <div>
+            <label for="a3">email:</label>
+            <input type="text" id="a3" placeholder="votre_email" required>
+            <label for="a4">telephone:</label><input
+            pattern="9[0-9]{7}" maxlength="8"title="le numero doit contenir
+            8 chiffre est commerncer par 9" id="a4" type="text" placeholder="votre telephone" required>
+          </div>
+          <div>
+            <label>sujet:</label>
+            <input type="text" placeholder="votre sujet" required>
+          </div>
+          <div>
+            <label for="a5">message:</label>
+            <br><textarea id="a5" name="msg" id="msg" rows="10" cols="30" required></textarea>
+          </div>
+          <div>
+            <input type="reset" value="annuler">
+            <input type="submit" value="envoyer">
+          </div>
+    </fieldset>
+  </form>    
+</body>
+</html>
